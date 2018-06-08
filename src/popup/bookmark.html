@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>transientBug</title>
+
+  <link rel="stylesheet" href="bookmark.css"/>
+</head>
+
+<body>
+  <div class="hidden panel login-panel">
+    <div class="panel-header">
+      <img class="logo" src="../icons/bug_logo.png" alt="logo">
+      <h1 class="logo">transientBug</h1>
+    </div>
+
+    <h3 class="title">Login</h3>
+
+    <p>
+      This will open a new tab to transientbug.ninja, authorizing the extension.
+    </p>
+    <a href="#" class="big-button login-button">Login</a>
+  </div>
+
+  <div class="hidden panel saving-panel">
+    <div class="panel-header">
+      <img class="logo" src="../icons/bug_logo.png" alt="logo">
+      <h1 class="logo">transientBug</h1>
+    </div>
+
+    <h3 class="title">Saving ...</h3>
+
+    <p>
+      Hang tight, bytes are flying
+    </p>
+  </div>
+
+  <div class="hidden panel details-panel">
+    <div class="panel-header">
+      <img class="logo" src="../icons/bug_logo.png" alt="logo">
+      <h1 class="logo">transientBug</h1>
+    </div>
+
+    <h3 class="title">Edit</h3>
+
+    <form id="edit-details-form">
+      <fieldset>
+        <legend>Name</legend>
+        <input type="text" name="title" id="details-title" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Tags</legend>
+        <input type="text" name="tags" id="details-tags" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Description</legend>
+        <textarea name="description" id="details-description"></textarea>
+      </fieldset>
+
+      <div class="panel-controls">
+        <a href="#" class="button update-button" title="Save changes">Save</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="hidden panel error-panel">
+    <div class="panel-header">
+      <img class="logo" src="../icons/bug_logo.png" alt="logo">
+      <h1 class="logo">transientBug</h1>
+    </div>
+
+    <h3 class="title">Uh Oh!</h3>
+
+    <p>
+      Something went wrong while trying to bookmark this page. Maybe try again?
+    </p>
+    <p id="error-message"></p>
+  </div>
+
+  <script src="../browser-polyfill.min.js"></script>
+  <script src="bookmark.js"></script>
+</body>
+</html>
